@@ -1,53 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Mi Primer Sitio Web</title>
 </head>
+
 <body>
 
-    <!-- Existen diferentes tipos de etiquetas, dentro de las mas importantes encontramos,
-     <h1> hasta <h6> nos marca un orden gerarquico siendo la <h1> la etiqueta principal de este conjunto de etiquetas.-->
-    <h1>Titulo principal de mi Sitio Web</h1>
+    <!--Una pagina Web esta compuesta por diversos bloques, donde podriamos encontrar el emcabezado, el contenido, entre otros.
+    con la etiqueta <header></header> le daremos orden estructurado a nuestro codigo y alli anidaremos la informacion relevante a nuestro emcabezado.-->
 
-    <!-- utilizo la etiqueta <span> </span>, para textos cortos que no quiero que ocupen el 100% del espacio de la página. -->
-    <span>HOME</span>
-    <span>Noticias</span>
-    <span>Entretenimiento</span>
+    <header>
+        <!-- Existen diferentes tipos de etiquetas, dentro de las mas importantes encontramos,
+        <h1> hasta <h6> nos marca un orden gerarquico siendo la <h1> la etiqueta principal de este conjunto de etiquetas.-->
+        <h1>Titulo principal de mi Sitio Web</h1>
 
-    <h2>Titulo de una sección de noticias</h2>
+        <!-- utilizo la etiqueta <span> </span>, para textos cortos que no quiero que ocupen el 100% del espacio de la página. -->
+        <span>HOME</span>
+        <span>Noticias</span>
+        <span>Entretenimiento</span>
+    </header>
+    <!-- Contenido principal de nuestra pagina Web, podemos utilizar la etiqueta <main> -->
+    <main>
 
-    <h3>Esta es la noticia N° 1</h3>
+        <!--Con la etiqueta <section></section>, podemos establecer secciones, sub dividir la informacion que tenemos aqui incluida.-->
+        <section>
+            <h2>Titulo de una sección de noticias</h2>
+            <article>
 
-    <!-- La etiqueta <p> la utilizamos para maquetar los parrafos de nuestras páginas-->
-    <p>Este es el primer parrafo de mi noticia</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsam veritatis eaque nulla optio ab. Perspiciatis, inventore eligendi eveniet aliquid vel quas debitis non quam at placeat maxime commodi! Excepturi.</p>
+                <h3>Esta es la noticia N° 1</h3>
 
-    <!-- La etiqueta <hr /> nos brinda de manera visual una linea que parte la pagina-->
-    <hr />
+                <!-- La etiqueta <div> se utiliza mucho para agrupar elementos-->
+                <div>
+                    <!-- La etiqueta <p> la utilizamos para maquetar los parrafos de nuestras páginas-->
+                    <p>Este es el primer parrafo de mi noticia</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsam veritatis eaque nulla optio
+                        ab.
+                        Perspiciatis,
+                        inventore eligendi eveniet aliquid vel quas debitis non quam at placeat maxime commodi!
+                        Excepturi.
+                    </p>
+                </div>
+            </article>
 
-    <h3>Esta es la noticia N° 2</h3>
+            <!-- La etiqueta <hr /> nos brinda de manera visual una linea que parte la pagina-->
+            <hr />
 
-    <p>Este es un listado de cosas importantes para esta noticia</p>
+            <article>
 
-    <!-- Podemos utilizar diferentes tipos de listas, ordenadas <ol> y desordenada <ul>, dentro de cada lista incluiremos los diferentes Items <li> -->
-    <ol>
-        <li>Item inicial</li>
-        <li>Item intermedio</li>
-        <li>item final</li>
-    </ol>
+            <h3>Esta es la noticia N° 2</h3>
 
-    <hr />
+            <p>Este es un listado de cosas importantes para esta noticia</p>
 
-    <h3>Esta es la noticia N° 3</h3>
+            <!-- Podemos utilizar diferentes tipos de listas, ordenadas <ol> y desordenada <ul>, dentro de cada lista incluiremos los diferentes Items <li> -->
+            <ol>
+                <li>Item inicial</li>
+                <li>Item intermedio</li>
+                <li>item final</li>
+            </ol>
 
-    <p>Este es un listado de cosas sin orden especifico</p>
+            </article>
 
-    <ul>
-        <li>Item inicial</li>
-        <li>Item intermedio</li>
-        <li>Item final</li>
-    </ul>
+            <hr />
 
-    
+            <article>
+
+                <h3>Esta es la noticia N° 3</h3>
+
+                <p>Este es un listado de cosas sin orden especifico</p>
+
+                <ul>
+                    <li>Item inicial</li>
+                    <li>Item intermedio</li>
+                    <li>Item final</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <!-- Pie de la pagina Web, podemos utilizar la etiqueta <footer> -->
+    <footer>
+
+        <p>Este es el footer de mi página Web, donde pondremos algunos enlaces</p>
+
+        <span>Enlace 1</span>
+        <span>Enlace 2</span>
+        <span>Enlace 3</span>
+
+    </footer>
 </body>
+
 </html>
